@@ -1,6 +1,6 @@
-// 10 method built-in javascript
+// 10 function built-in javascript
 
-// 1. filter
+// 1. filter : berfungsi untuk mencari semua element dalam array yang sesuai kriteria tertentu
 const animals = ["Zebra", "Fox", "Camel", "Donkey", "Pig", "Cow", "Goat"];
 const newAnimals = animals.filter((animal) => animal.includes("o"));
 console.log("=== Nomer 01 : filter ===");

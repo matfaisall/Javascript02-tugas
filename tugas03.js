@@ -35,11 +35,12 @@ const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
     (data) => nilaiAwal < data && data < nilaiAkhir
   );
 
+  hasilSeleksi.sort((a, b) => a - b);
+
   if (hasilSeleksi.length === 0) {
     return "Hasil tidak ditemukan";
   }
 
-  hasilSeleksi.sort((a, b) => a - b);
   return hasilSeleksi;
 };
 

@@ -18,9 +18,10 @@ const name = [
 ];
 
 const searchName = (search, limiter, callback) => {
-  const filteredName = name.filter((index) => {
-    return index.toLowerCase().indexOf(search.toLowerCase()) > -1;
-  });
+  const filteredName = name.filter(
+    (nam) => nam.toLowerCase().indexOf(search.toLowerCase()) > -1
+  );
+
   if (filteredName != 0) {
     callback(filteredName, limiter);
   }
